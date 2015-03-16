@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+
+    <title>Iraq War Deaths</title>
+
+    <link type="text/css" rel="stylesheet" href="libraries/leaflet-0.7.3/leaflet.css"/>
+    <link type="text/css" rel="stylesheet" href="css/stylesheet.css"/>
+    <link type="text/css" rel="stylesheet" href="libraries/Leaflet.markercluster-master/dist/MarkerCluster.css" />
+    <link type="text/css" rel="stylesheet" href="libraries/Leaflet.markercluster-master/dist/MarkerCluster.Default.css" />
+    <link type="text/css" rel="stylesheet" href="libraries/bootstrap-3.3.2-dist/css/bootstrap.min.css" />
+    <link type="text/css" rel="stylesheet" href="libraries/bootstrap-3.3.2-dist/css/bootstrap-theme.min.css" />
+    <link type="text/css" rel="stylesheet" href="libraries/leaflet-control-geocoder-master/Control.Geocoder.css" />
+    <link type="text/css" rel="stylesheet" href="libraries/jquery-ui-1.11.3/jquery-ui.min.css" />
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+
+  </head>
+
+  <body>
+    <div class="modal fade" id="mapModal" tabindex="-1" role="dialog" aria-labelledby="basicModal" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+            <h4 class="modal-title" style="font-family: 'Open Sans', sans-serif; font-weight: 600;">Violence-Related Deaths in Iraq, 2004-2009</h4>
+          </div>
+          <div class="modal-body">
+            <p style="font-family: 'Open Sans', sans-serif;">
+            In 2010, The Guardian's <a href="http://www.theguardian.com/news/datablog/2010/oct/23/wikileaks-iraq-data-journalism" target="_blank">Datablog</a> analyzed and published a dataset from the Wikileaks Iraq war logs release. The dataset, known as SIGACTS (Significant Actions) and recorded by <a href="http://www.usf-iraq.com/" target="_blank">Multi-National Forces Iraq</a> (MNF-I, aka Coalition forces), locates violent incidents throughout the country and describes the number of people who were wounded or killed as a result. It is a <a href="http://www.theguardian.com/news/datablog/2010/oct/25/wikileaks-iraq-data" target="_blank">limited dataset</a>, however, in several ways, including that it underreports violent incidents (and therefore casualties), data entry was often inconsistent and/or poorly standardized, and violent incidents which did not result in casualties are excluded. <a href="https://www.iraqbodycount.org/" target="_blank">Iraq Body Count</a> (IBC) provides an alternative database (and thorough war logs <a href="https://www.iraqbodycount.org/analysis/numbers/warlogs/" target="_blank">comparison</a>, <a href="https://www.iraqbodycount.org/analysis/beyond/warlogs/" target="_blank">analysis</a>, and <a href="https://www.iraqbodycount.org/analysis/qa/warlogs/" target="_blank">context</a>) sourced from a combination of media and official reports that consistently shows higher rates of civilian casualties. For example, from 2004-2009, the MNF-I dataset records about 66,000 civilian deaths, while IBC shows more than 98,000.<br><br>
+            Still, the MNF-I dataset is unique in its detail and precision and can thus provide a valuable, spatial visual; when it was released, the locations were mapped quickly by several news agencies, but the opportunity to visualize the complexity of these incidents seems to have been missed. This map aims to fill that gap, allow users to more easily explore the MNF-I dataset and the MNF-I recording methods, and serve as a reminder of the war's bloodiest years that built the foundation for the terrorist activity and rising violence that plague the nation today. INCLUDE SOMETHING ABOUT MISSING MONTHS...</p><br><br>
+            <p style="font-family: 'Open Sans', sans-serif; font-size: 10px; font-weight: 300;">Sources here</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div>
+
+    <div id="map"></div>
+
+  </body>
+
+  <script type="text/javascript" src="libraries/jQuery/jquery-1.11.2.min.js"></script>
+  <script type="text/javascript" src="libraries/jquery-ui-1.11.3/jquery-ui.min.js"></script>
+  <script type="text/javascript" src="libraries/leaflet-0.7.3/leaflet.js"></script>
+  <script type="text/javascript" src="libraries/d3/d3.v3.js"></script>
+  <script type="text/javascript" src="libraries/Leaflet.markercluster-master/dist/leaflet.markercluster-src.js"></script>
+  <script type="text/javascript" src="libraries/crossfilter-master/crossfilter.min.js"></script>
+  <script type="text/javascript" src="libraries/bootstrap-3.3.2-dist/js/bootstrap.min.js"></script>
+  <script type="text/javascript" src="libraries/leaflet-control-geocoder-master/Control.Geocoder.js"></script>
+  <script type="text/javascript" src="libraries/LeafletSlider-master/SliderControl.js"></script>
+  <script type="text/javascript" src="js/script.js"></script>
+
+</html>
